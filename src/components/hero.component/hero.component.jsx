@@ -1,11 +1,8 @@
-// import React, {useState, useEffect} from 'react';
 import React from 'react'
 import images from '../../data/images';
 import GalleryComp from '../gallery.Component/gallery.component';
-// import Navbar from '../navbar.component/navbar.component'
 import '../hero.component/hero.style.css'
 import '../gallery.Component/images.style.css'
-import '../navbar.component/navbar.styles.css'
 
 
 class HeroComp extends React.Component{
@@ -39,12 +36,9 @@ class HeroComp extends React.Component{
 
         return(
              <div className='mainContainer'>
-                 {/* <div className='navBarComponent'>
-                     <Navbar />
-                 </div> */}
                <div className='heroComp bgStyle' style={ this.state.bgImage }    >
                    <div className='lander'>
-                        <h1 className='landerName'>LanderDot Photography</h1> 
+                        <h1 className='landerName' >LanderDot Photography</h1> 
                    </div>
                    <div className='formInput' >
                         <input  type="text" placeholder='search cartigory' onChange={ this.handleSearchSubmit  } />
