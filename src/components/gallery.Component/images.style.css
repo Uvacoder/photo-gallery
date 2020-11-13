@@ -8,17 +8,20 @@
 
 .imageContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(350px, 1fr));
     grid-gap: 5px;
     grid-auto-flow: dense;
-    align-items: center;
+    justify-items: center;
+    width: 90vw;
+    margin: 30px auto;
 }
 
 .image{
-    width: 330px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border-radius: 3px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
 
