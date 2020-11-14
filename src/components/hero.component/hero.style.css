@@ -26,5 +26,19 @@
     -moz-text-fill-color: transparent;
 }
 
+.formInput{
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(45deg, #4FC3F7,#004D40);
 
+}
 
+.formInput > option {
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    outline: none;
+    background-image: linear-gradient(45deg, #4FC3F7,#004D40);
+}

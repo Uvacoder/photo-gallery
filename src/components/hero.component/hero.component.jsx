@@ -40,9 +40,22 @@ class HeroComp extends React.Component{
                    <div className='lander'>
                         <h1 className='landerName' >LanderDot Photography</h1> 
                    </div>
-                   <div className='formInput' >
+                   {/* <div className='formInput' >
                         <input  type="text" placeholder='search cartigory' onChange={ this.handleSearchSubmit  } />
-                   </div>
+                   </div> */}
+                   <select className='formInput' name = 'priority' onChange = { this.handleSearchSubmit } >
+                        <option value = '' > All </option>
+                        <option value = 'baby' > Baby </option>
+                        <option value = 'cards'> Cards </option>
+                        <option value = 'people' > People </option>
+                        <option value = 'light' > Light </option>
+                        <option value = 'ludo' > Ludo </option>
+                        <option value = 'shoe' > Shoe </option>
+                        <option value = 'sunset' > Sunset </option>
+                        <option value = 'nature' > Nature </option>
+                        <option value = 'black and white' > Black and White </option>
+                        <option value = 'railway' > Railway </option>
+                    </select>
 
                </div>
                  <GalleryComp filteredImage={filteredImage} /> 
