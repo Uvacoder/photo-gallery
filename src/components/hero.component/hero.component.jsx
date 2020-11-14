@@ -40,9 +40,6 @@ class HeroComp extends React.Component{
                    <div className='lander'>
                         <h1 className='landerName' >LanderDot Photography</h1> 
                    </div>
-                   {/* <div className='formInput' >
-                        <input  type="text" placeholder='search cartigory' onChange={ this.handleSearchSubmit  } />
-                   </div> */}
                    <select className='formInput' name = 'priority' onChange = { this.handleSearchSubmit } >
                         <option value = '' > All </option>
                         <option value = 'baby' > Baby </option>
@@ -56,7 +53,6 @@ class HeroComp extends React.Component{
                         <option value = 'black and white' > Black and White </option>
                         <option value = 'railway' > Railway </option>
                     </select>
-
                </div>
                  <GalleryComp filteredImage={filteredImage} /> 
              </div>
