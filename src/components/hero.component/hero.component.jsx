@@ -3,6 +3,7 @@ import images from '../../data/images';
 import GalleryComp from '../gallery.Component/gallery.component';
 import '../hero.component/hero.style.css'
 import '../gallery.Component/images.style.css'
+import Navbar from '../Navbar'
 
 
 class HeroComp extends React.Component{
@@ -36,6 +37,7 @@ class HeroComp extends React.Component{
 
         return(
              <div className='mainContainer'>
+                 <Navbar />
                <div className='heroComp bgStyle' style={ this.state.bgImage }    >
                    <div className='lander'>
                         <h1 className='landerName' >LanderDot Photography</h1> 

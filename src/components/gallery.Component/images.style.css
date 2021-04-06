@@ -5,45 +5,45 @@
     overflow-x: hidden;
 }
 
-
 .imageContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(350px, 1fr));
-    grid-gap: 5px;
-    grid-auto-flow: dense;
-    justify-items: center;
-    width: 90vw;
-    margin: 30px auto;
+    scroll-behavior: smooth;
+   max-width: 1200px;
+   margin: 20px auto;
 }
 
 .image{
     width: 350px;
-    height: 250px;
     border-radius: 3px;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin: 0px auto 20px;
 }
 
+.nav{
+    width: 100vw;
+    height: 8vh;
+}
 
+.nav-list{
+    display: inline-flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* mobile */
 @media screen and (min-width:311px) and (max-width: 580px) {
     .imageContainer{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .image{
         width: 90vw;
-
+        margin: 10px auto
     }
 }
 
+/* tablets */
 @media screen and (min-width:581px) and (max-width: 900px){
     .imageContainer{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .image{
-        width: 47vw;
-        height: 47vh;
-        grid-gap: 1px;
+        width: 95vw;
+        margin: 10px auto;
     }
 }
 
@@ -52,9 +52,9 @@
     .imageContainer{
         grid-template-columns: repeat(3, 1fr);
     }
+
     .image{
         width: 32vw;
-        
         grid-gap: 1px;
     }
 }
